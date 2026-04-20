@@ -1,0 +1,48 @@
+# Use zsh as the default shell
+shell-integration = "zsh"
+
+# shell-integration = detect
+shell-integration-features = cursor,sudo,title
+
+background-opacity = 0.8
+background-blur = 20
+theme = Argonaut
+
+# Window size and padding
+window-width = 115
+window-height = 35
+window-padding-x = 16
+window-padding-y = 16
+window-padding-balance = true
+window-padding-color = background
+
+clipboard-read = ask
+clipboard-write = allow
+clipboard-paste-protection = true
+copy-on-select = true
+
+title-report = false
+
+# Cursor
+cursor-style = "block"
+cursor-style-blink = true
+
+# Hide cursor during shell integration animations
+shell-integration-features = "no-cursor" 
+
+# Font
+font-family = JetBrainsMono Nerd Font Mono
+# font-family = MesloLGS Nerd Font Mono
+font-size = 14
+
+# font-feature = +liga
+# font-feature = +calt
+# font-feature = +dlig
+
+# font-family = Noto Color Emoji
+# font-family = Noto Sans CJK JP
+
+# Minimal macOS titlebar for cleaner appearance
+# macos-titlebar-style = "hidden"
+# macos-titlebar-proxy-icon = "hidden"
+
