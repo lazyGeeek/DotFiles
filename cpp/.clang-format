@@ -92,13 +92,13 @@ AllowShortFunctionsOnASingleLine: None # All
 # BinPackParameters: BinPack
 # BitFieldColonSpacing: Both
 # BracedInitializerIndentWidth: -1
-# BraceWrapping:
+BraceWrapping:
 #   AfterCaseLabel:  false
 #   AfterClass:      false
-#   AfterControlStatement: Never
+  AfterControlStatement: false
 #   AfterEnum:       false
 #   AfterExternBlock: false
-#   AfterFunction:   false
+  AfterFunction:   false
 #   AfterNamespace:  false
 #   AfterObjCDeclaration: false
 #   AfterStruct:     false
@@ -108,7 +108,7 @@ AllowShortFunctionsOnASingleLine: None # All
 #   BeforeLambdaBody: false
 #   BeforeWhile:     false
 #   IndentBraces:    false
-#   SplitEmptyFunction: true
+  SplitEmptyFunction: false
 #   SplitEmptyRecord: true
 #   SplitEmptyNamespace: true
 # BreakAdjacentStringLiterals: true
