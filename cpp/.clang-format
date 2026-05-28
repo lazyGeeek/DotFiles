@@ -98,7 +98,7 @@ BraceWrapping:
   AfterControlStatement: false
 #   AfterEnum:       false
 #   AfterExternBlock: false
-  AfterFunction:   false
+  AfterFunction:   true
 #   AfterNamespace:  false
 #   AfterObjCDeclaration: false
 #   AfterStruct:     false
@@ -118,7 +118,7 @@ BraceWrapping:
 # BreakArrays:     true
 # BreakBeforeBinaryOperators: None
 # BreakBeforeConceptDeclarations: Always
-BreakBeforeBraces: Attach # Stroustrup
+BreakBeforeBraces: Custom
 # BreakBeforeInlineASMColon: OnlyMultiline
 # BreakBeforeTemplateCloser: false
 # BreakBeforeTernaryOperators: true
@@ -276,7 +276,7 @@ SortIncludes:
 #   InEmptyParentheses: false
 #   Other:           false
 # SpacesInSquareBrackets: false
-# Standard:        Latest
+Standard:        Latest
 # StatementAttributeLikeMacros:
 #   - Q_EMIT
 # StatementMacros:
