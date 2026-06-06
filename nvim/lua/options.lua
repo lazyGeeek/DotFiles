@@ -4,10 +4,18 @@ vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
 vim.opt.mouse = 'a'                 -- allow the mouse to be used in nvim
 
 -- Tab
--- vim.opt.tabstop = 4              -- number of visual spaces per TAB
+vim.opt.tabstop = 4                 -- number of visual spaces per TAB
 vim.opt.softtabstop = 4             -- number of spaces in tab when editing
 vim.opt.shiftwidth = 4              -- insert 4 spaces on a tab
 vim.opt.expandtab = true            -- tabs are spaces, mainly because of Python
+vim.opt.autoindent = true
+vim.opt.smartindent = true
+vim.opt.wrap = true
+
+-- Cache
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undofile = true
 
 -- Highlight spaces
 vim.opt.list = true
@@ -26,6 +34,10 @@ vim.opt.showmode = false            -- we are experienced, wo don't need the "--
 
 -- Searching
 vim.opt.incsearch = true            -- search as characters are entered
-vim.opt.hlsearch = false            -- do not highlight matches
+vim.opt.hlsearch = true            -- do not highlight matches
 vim.opt.ignorecase = true           -- ignore case in searches by default
 vim.opt.smartcase = true            -- but make it case sensitive if an uppercase is entered
+
+-- Other
+vim.opt.colorcolumn = "80"
+vim.g.editorconfig = true

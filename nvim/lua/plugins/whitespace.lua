@@ -1,0 +1,33 @@
+return { }
+-- Show whitespaces (using plugin)
+-- {
+--     "mcauley-penney/visual-whitespace.nvim",
+--     event = "ModeChanged *:[vV\\22]",
+--     opts = {
+--         enabled = true,
+--         highlight = { link = "Visual", default = true },
+--         match_types = {
+--             space = true,  -- ← shows only spaces
+--             tab   = true, -- hides tabs
+--             nbsp  = false, -- hides non‑breaking spaces
+--             lead  = true,
+--             trail = false,
+--         },
+--         list_chars = {
+--             space = "·",     -- visual glyph for spaces
+--             tab   = "↦",
+--             -- nbsp  = "␣",
+--             lead  = "·",
+--             -- trail = "›",
+--         },
+--         -- fileformat_chars = {
+--         --     unix = "↲",
+--         --     mac = "←",
+--         --     dos = "↙",
+--         -- },
+--         ignore = {
+--             filetypes = {},
+--             buftypes  = {},
+--         },
+--     },
+-- }

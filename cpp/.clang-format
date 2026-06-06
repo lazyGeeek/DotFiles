@@ -82,7 +82,7 @@ AllowShortFunctionsOnASingleLine: None # All
 # AllowShortIfStatementsOnASingleLine: Never
 # AllowShortLambdasOnASingleLine: All
 # AllowShortLoopsOnASingleLine: false
-# AllowShortNamespacesOnASingleLine: false
+AllowShortNamespacesOnASingleLine: false
 # AlwaysBreakAfterDefinitionReturnType: None
 # AlwaysBreakBeforeMultilineStrings: false
 # AttributeMacros:
@@ -94,14 +94,14 @@ AllowShortFunctionsOnASingleLine: None # All
 # BracedInitializerIndentWidth: -1
 BraceWrapping:
 #   AfterCaseLabel:  false
-#   AfterClass:      false
+  AfterClass:      true
   AfterControlStatement: false
-#   AfterEnum:       false
+  AfterEnum:       true
 #   AfterExternBlock: false
   AfterFunction:   true
-#   AfterNamespace:  false
+  AfterNamespace:  true
 #   AfterObjCDeclaration: false
-#   AfterStruct:     false
+  AfterStruct:     true
 #   AfterUnion:      false
 #   BeforeCatch:     false
 #   BeforeElse:      false
@@ -185,8 +185,8 @@ InsertNewlineAtEOF: true
 #   HexMinDigits:    0
 # JavaScriptQuotes: Leave
 # JavaScriptWrapImports: true
-# KeepEmptyLines:
-#   AtEndOfFile:     false
+KeepEmptyLines:
+  AtEndOfFile:     true
 #   AtStartOfBlock:  true
 #   AtStartOfFile:   true
 # KeepFormFeed:    false
@@ -196,7 +196,7 @@ InsertNewlineAtEOF: true
 # MacroBlockEnd:   ''
 # MainIncludeChar: Quote
 # MaxEmptyLinesToKeep: 1
-# NamespaceIndentation: None
+NamespaceIndentation: All
 # ObjCBinPackProtocolList: Auto
 # ObjCBlockIndentWidth: 2
 # ObjCBreakBeforeNestedBlockParam: true
@@ -216,7 +216,7 @@ InsertNewlineAtEOF: true
 # PenaltyExcessCharacter: 1000000
 # PenaltyIndentedWhitespace: 0
 # PenaltyReturnTypeOnItsOwnLine: 60
-# PointerAlignment: Right
+PointerAlignment: Left
 # PPIndentWidth:   -1
 # QualifierAlignment: Leave
 # ReferenceAlignment: Pointer
