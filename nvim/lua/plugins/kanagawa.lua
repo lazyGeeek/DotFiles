@@ -57,9 +57,9 @@ return {
                     -- DiagnosticFloatingHint  = { bg = "none" },
                 }
             end,
-            theme = "dragon",              -- Load "wave" theme
-            background = {                 -- map the value of 'background' option to a theme
-                dark = "dragon",           -- try "dragon" !
+            theme = "wave",              -- Load "wave" theme
+            background = {               -- map the value of 'background' option to a theme
+                dark = "wave",           -- try "dragon" !
                 light = "lotus"
             },
         });
