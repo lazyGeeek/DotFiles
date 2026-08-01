@@ -6,7 +6,10 @@ shell-integration-features = cursor,sudo,title
 
 background-opacity = 0.8
 background-blur = 20
-theme = TokyoNight
+# theme = Kanagawa Wave
+# theme = TokyoNight
+# theme = Kitty Default
+theme = iTerm2 Default
 
 # Window size and padding
 window-width = 115
