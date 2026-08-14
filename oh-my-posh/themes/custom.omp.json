@@ -1,0 +1,108 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 4,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "session",
+          "style": "plain",
+          "foreground": "#15d110",
+          "template": "[\ueb99 {{ .UserName }}@{{ .HostName }}]"
+        },
+        {
+          "type": "path",
+          "style": "plain",
+          "foreground": "#0ca0d8",
+          "template": " \uf07b [{{ .Path }}]",
+          "options": {
+            "folder_separator_icon": "/",
+            "style": "full"
+          }
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "#931fa3",
+          "template": "{{ .UpstreamIcon }} {{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+          "powerline_symbol": "\ue0b0",
+          "options": {
+            "fetch_upstream_icon": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "sysinfo",
+          "style": "plain",
+          "powerline_symbol": "\ue0b0",
+          "template": "[\uf4bc <#4a11c1>{{ round .PhysicalPercentUsed .Precision }}% ({{ (div ((sub .PhysicalTotalMemory .PhysicalAvailableMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB)</>]",
+          "foreground": "#2cbc16"
+        },
+        {
+          "type": "battery",
+          "style": "plain",
+          "powerline_symbol": "\ue0b0",
+          "template": "[{{ if not .Error }}{{ .Icon }} {{ .Percentage }}%{{ end }}{{ .Error }}]",
+          "foreground": "#2cbc16"
+        },
+        {
+          "type": "time",
+          "style": "plain",
+          "powerline_symbol": "\ue0b0",
+          "template": "[\uf017 {{ .CurrentDate | date .Format }}]",
+          "foreground": "#2cbc16"
+        }
+      ],
+      "newline": false
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "executiontime",
+          "style": "plain",
+          "powerline_symbol": "\ue0b0",
+          "template": "[\uf252 {{ .FormattedMs }}]",
+          "options": {
+            "always_enabled": true
+          },
+          "foreground": "#3913ec"
+        },
+        {
+          "type": "status",
+          "style": "plain",
+          "powerline_symbol": "\ue0b0",
+          "template": "[{{ if eq .Code 0 }}\uf00c{{ else }}\uf071 {{ .Code }}{{ end }}]",
+          "options": {
+            "always_enabled": true
+          },
+          "foreground": "#3813e6"
+        },
+        {
+          "type": "root",
+          "style": "plain",
+          "powerline_symbol": "\ue0b0",
+          "template": " \uf0e7 ",
+          "foreground": "#ff8040"
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "powerline_symbol": "\ue0b0",
+          "template": " > ",
+          "foreground": "#ff8040"
+        }
+      ],
+      "newline": true,
+      "force": true
+    }
+  ]
+}
