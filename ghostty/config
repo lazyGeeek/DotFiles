@@ -31,7 +31,7 @@ cursor-style = "block"
 cursor-style-blink = true
 
 # Hide cursor during shell integration animations
-shell-integration-features = "no-cursor" 
+shell-integration-features = "no-cursor"
 
 # Font
 font-family = JetBrainsMono Nerd Font Mono

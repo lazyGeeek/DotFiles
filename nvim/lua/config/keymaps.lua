@@ -16,6 +16,8 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Move up in buffer with cursor 
 vim.keymap.set("n", "n", "nzzzv", { desc = "Centered search iteration" })
 vim.keymap.set("n", "N", "Nzzzv", { desc = "Centered search iteration" })
 
+vim.keymap.set("n", "<C-S-z>", "<C-r>", { desc = "Redo last change" })
+
 vim.keymap.set("v", "<", "<gv", opts, { desc = "Move selected lines to left" })
 vim.keymap.set("v", ">", ">gv", opts, { desc = "Move selected lines to right" })
 
